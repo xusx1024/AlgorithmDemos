@@ -2,7 +2,7 @@
  
 #### 图示
  先来直观的看一张动态图,如下sel-1所示:<br/>
-  ![sel-1](/res/selection-sort-animation.gif.gif)
+  ![sel-1](/res/selection-sort-animation.gif)
 #### 步骤
 给定数组大小为N,起始位置为L
 1. 找到N-L+1数组中的最小值
