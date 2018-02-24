@@ -1,15 +1,15 @@
 ## 排序种类
  
-| 名字 | name | 简称 | 实现 | 复杂度 | 是否比较大小 |
+| 名字 | name | 简称 | 实现 | 时间复杂度 | 是否比较大小 |
 | -------- |:--------:|:--------:|:--------:|:--------:| -------- |
 |冒泡排序|bubble sort|BUB|迭代|O(N<sup>2</sup>)|Y|
 |插入排序|insertion sort|INS|迭代|O(N<sup>2</sup>)|Y|
 |选择排序|selection sort|SEL|迭代|O(N<sup>2</sup>)|Y|
 |归并排序|merge sort|MER|递归|O(N*logN)|Y|
 |快速排序|quick sort|QUI|递归|O(N<sup>2</sup>)|Y|
-|随机快速排序|randomized quick sort|R-Q|迭代|O(N*logN)|Y|
-|计数排序|counting sort|COU|迭代|O(N*logN)|N|
-|基数排序|radix sort|RAD|迭代|O(N*logN)|N|
+|随机快速排序|randomized quick sort|R-Q|递归|O(N*logN)|Y|
+|计数排序|counting sort|COU|NA|O(N*logN)|N|
+|基数排序|radix sort|RAD|NA|O(N*logN)|N|
 
 ## 目标
 

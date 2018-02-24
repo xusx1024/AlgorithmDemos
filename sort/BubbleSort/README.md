@@ -1,7 +1,6 @@
  ## Bubble Sort
  
- 
- O(N<sup>2</sup>)
+ ![动态示意图](/res/bubble-sort.gif)
  
  
  
