@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgorithmDemos.iml" filepath="$PROJECT_DIR$/.idea/AlgorithmDemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/sort/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/sort/BubbleSort/BubbleSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sort/InsertionSort/InsertionSort.iml" filepath="$PROJECT_DIR$/sort/InsertionSort/InsertionSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/sort/SelectionSort/SelectionSort.iml" filepath="$PROJECT_DIR$/sort/SelectionSort/SelectionSort.iml" />
     </modules>
   </component>
