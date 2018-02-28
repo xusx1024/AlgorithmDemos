@@ -1,4 +1,4 @@
-## Bubble Sort
+## Insertion Sort
  
 #### 图示
  先来直观的看一张动态图,如下ins-1所示:<br/>

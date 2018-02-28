@@ -1,4 +1,4 @@
-## Selection Sort
+## Quick Sort
  
 #### 图示
  先来直观的看一张动态图,如下qui-1所示:<br/>
