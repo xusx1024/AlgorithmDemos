@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 /**
  * 基数排序
  *
@@ -72,7 +74,6 @@ public class RadixSort {
             n *= 10;
             k = 0;// 将k置0，用于下一轮保存位排序结果
         }
-
     }
 
     public static void main(String[] args) {
