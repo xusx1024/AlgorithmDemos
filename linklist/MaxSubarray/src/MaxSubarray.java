@@ -1,4 +1,3 @@
-
 public class MaxSubarray {
     public static void main(String[] args) {
         MaxSubarray maxSubarray = new MaxSubarray();
@@ -31,18 +30,19 @@ public class MaxSubarray {
         int mmax = arr[mid];
         int ans = mmax;
 
-        for (int i = mid - 1; i >= low; i--) {
+        for (int i = mid - 1; i >= low; i--) {//跨越中点的,左半边的最大数组和
             ans += arr[i];
             mmax = mmax < ans ? ans : mmax;
         }
 
         ans = mmax;
 
-        for (int i = mid + 1; i < high; i++) {
+        for (int i = mid + 1; i < high; i++) {//跨越中点的,右半边的最大数组和
             ans += arr[i];
             mmax = mmax < ans ? ans : mmax;
         }
 
+        // 左边,右边,跨越中点的一部分,三者比较得出最大的数组和
         int t = lmax > rmax ? lmax : rmax;
         ans = t > mmax ? t : mmax;
 
@@ -50,6 +50,7 @@ public class MaxSubarray {
 
     }
 
+    // 双重循环,记录累加的和
     void fun3(int[] arr) {//暴力求解法
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -63,6 +64,7 @@ public class MaxSubarray {
         System.out.println("fun3:" + max);
     }
 
+    // 顺序叠加元素,一旦和为负数,就清空重新叠加
     void fun4(int[] arr) {// 线性时间法
         int[] C = new int[arr.length];
         int max = 0;
