@@ -18,7 +18,7 @@ public class HeapSort {
     private static void buildMaxHeap(String data[]) {
         // 树的根节点从0开始.和数组的下标保持一致.
         int startIndex = (int) Math.ceil(data.length - 1) / 2;// 从二叉堆的倒数第二层开始,最后一层是叶子
-//        startIndex = data.length - 1;// 从二叉堆最后也可,会白白循环
+//        startIndex = data.length - 1;// 从二叉堆最后也可开始,会白白循环
         for (int i = startIndex; i >= 0; i--) {
             maxHeap(data, data.length, i);
         }

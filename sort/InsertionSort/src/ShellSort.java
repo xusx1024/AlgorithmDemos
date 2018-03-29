@@ -3,14 +3,15 @@ public class ShellSort {
     public static void main(String[] args) {
         ShellSort ss = new ShellSort();
         int arr[] = {29, 10, 14, 37, 14};
-        ss.standardSort(arr, 5);
+//        ss.standardSort(arr, 5);
+        ss.sort2(arr,5);
         for (int i : arr)
             System.out.print(i + " ");
     }
 
 
     // 严格按照定义来实现
-      void standardSort(int[] arr, int n) {
+    void standardSort(int[] arr, int n) {
         int i, j, gap;
         for (gap = n / 2; gap > 0; gap /= 2) {
             for (i = 0; i < gap; i++) {
@@ -30,4 +31,18 @@ public class ShellSort {
     }
 
 
+    void sort2(int a[], int n) {
+        int j, gap;
+        for (gap = n / 2; gap > 0; gap /= 2) {
+            for (j = gap; j < n; j++) {
+                int temp = a[j];
+                int k = j - gap;
+                while (k >= 0 && a[k] > temp) {
+                    a[k + gap] = a[k];
+                    k -= gap;
+                }
+                a[k + gap] = temp;
+            }
+        }
+    }
 }
